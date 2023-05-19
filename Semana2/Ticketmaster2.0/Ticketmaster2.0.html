@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticketmaster2.0</title>
+    <link rel="icon" href="./img/psicodel.ico" type="image/x-icon">
+    <!-- debería poner un íconito -->
+    
+</head>
+<body>
+    <center><h1>Señorras y señorres, este es TICKETMASTER 2.0</h1></center>
+        <form method="post" action="./Ticketmaster2.0.php" target="_self">
+            <!--Nombre
+            Apellido
+            Zona (Al menos 4 opciones)
+            Número de boletos (Hay un máximo de 15 boletos y un mínimo de uno)
+            Artista (Al menos 4 opciones)
+            Fecha 
+            Lugar (Al menos 4 opciones)
+            Si desean que su paquete incluya algún extra. (Al menos 3 opcionales)-->
+            <fieldset>
+            <legend> Interfaz de boletos </legend>
+                <label for="Nombre">Nombre:<br>
+                    <input name="nombre" id="nombre" type="text"required="on">
+                </label><br><br>
+                <label for="Apellido">Apellido(s):<br>
+                    <input name="apellido" id="apellido" type="text"required="on">
+                </label><br><br>
+                <!-- <label for="email">Email:<br>
+                    <input id="email" type="email" placeholder="holis@gmail.com" autocomplete="on"required="on">
+                </label><br><br> -->
+                <label for="Num. boletos">Número de boletos:<br><!--NÚMERO DE BOLETOS-->
+                    <input name="numbol" id="numbol" type="number" min="1" max="15" value="1" required="on" size="12.75"><br>
+                </label><br>
+                <label for="Zona">Zona<!---->
+                <select id="zona" name="zona" required="on">
+                    <optgroup>
+                        <option value="Frente">Frente</option>
+                        <option value="Lateral">Lateral</option>
+                        <option value="Centro">Centro</option>
+                        <option value="Atrás">Atrás</option>
+                    </optgroup>
+                </select>
+                </label><br><br>
+                <label for="Artista">Artista<!---->
+                    <select id="artista" name="artista" required="on">
+                        <optgroup>
+                            <option value="Lorde">Lorde</option>
+                            <option value="Nujabes">Nujabes</option>
+                            <option value="Miki Matsubara">Miki Matsubara</option>
+                            <option value="Mon Laferte">Mon Laferte</option>
+                        </optgroup>
+                    </select>
+                </label><br><br>
+                <label for="Fecha">Día deseado de entrega:<br>
+                    <input id="fecha" name="fecha" type="date"placeholder="Opcional" required="on">
+                </label><br><br>    
+                <label for="Lugar">Lugar:<br><!--LUGAR-->
+                    <input type="radio" name="lugar" id="lugar" value="Foro Sol" required>Foro Sol<br>
+                    <input type="radio" name="lugar" id="lugar" value="Palacio de los Deportes" required>Palacio de los Deportes<br>
+                    <input type="radio" name="lugar" id="lugar" value="Auditorio Nacional" required>Auditorio Nacional<br>
+                    <input type="radio" name="lugar" id="lugar" value="Teatro Metropolitan" required>Teatro Metropolitan<br>
+                </label><br>
+                <label for="Extras">Extras:<br><!--EXTRAS-->
+                    <input type="checkbox" name="extras[]" id="extras" value="Estacionamiento">Estacionamiento<br>
+                    <input type="checkbox" name="extras[]" id="extras" value="Bebidas alcohólicas ilimitadas">Bebidas alcohólicas ilimitadas<br>
+                    <input type="checkbox" name="extras[]" id="extras" value="Acceso zonas VIP">Acceso zonas VIP<br>
+                </label><br>
+            </fieldset>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </form>
+
+</body>
+</html>

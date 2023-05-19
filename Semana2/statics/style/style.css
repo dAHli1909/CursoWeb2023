@@ -1,0 +1,16 @@
+
+        p{
+            color:rgb(194, 211, 38) ;
+            font-style:italic;
+            font-weight:300;
+            text-align:center;
+            font-size:larger;
+            vertical-align:middle;
+            text-transform: inherit;
+
+        }
+        .hello{
+            color:aqua;
+            color:black!important;
+            color: red;
+        }

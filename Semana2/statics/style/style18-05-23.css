@@ -1,0 +1,18 @@
+a.enlacePro:link{
+    color:brown;
+    background-color: blueviolet;
+}
+a.enlacePro:focus{
+    background:red;
+    color:aquamarine;
+}
+a.enlacePro:hover{
+    background-color:yellowgreen;
+}
+a.enlacePro:active{
+    color:blueviolet;
+}
+a.enlacePro:visited{
+    color:black;
+    background-color: yellow;
+}

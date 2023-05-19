@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psico-libros</title>
+    <link rel="icon" href="./psicodel.ico" type="image/x-icon">
+</head>
+<body style="background-color: darkslategray;" marginwidth="260">
+<font color="white" face="arial">
+    <center>
+        <h1>Psico-tienda</h1>
+        <p >
+            Te presentamos un TOP 5 de los mejores libros leídos por el autor de esta página. Te 
+            brindarán tranquilidad y sosiegoen un mundo tan ajetreado como el nuestro; tenemos 
+            desde los clásicos de Poe hasta las mismísimas entrañas del psicoanálisis. 
+            <i>¡Esperemos disfrutes tu estadía!</p></i>
+        </p>
+    </center>
+    <table style="border-collapse:collapse;" align="center" cellpadding=30px border="1" >
+        <thead>
+            <tr>
+                <th>Libro</th>
+                <th>Imagen</th>
+            </tr>
+        </thead>
+        <tbody align="center">
+            <tr><!--1-->
+                <td><i>La insoportable levedad del ser</i>, Milán Kundera</td>
+                <td><center><img src="./insoportable.webp" alt="La insoportable levedad del ser"></center></td>
+            </tr>
+            <tr><!--2-->
+                <td><i>The Dark Tower IV: Wizard and Glass</i>, Stephen King</td>
+                <td><center><img src="./Wizard_and_Glass.jpg" alt="The Dark Tower IV: Wizard and Glass"></center></td>
+            </tr>
+            <tr><!--3-->
+                <td><i>Introducción al psicoanálisis</i>, Sigumund Freud</td>
+                <td><center><img src="./descarga.jpg" alt="Introducción al psicoanálisis"></center></td>
+            </tr>
+            <tr><!--4-->
+                <td>Antología de cuentos de Edgar Allan Poe</td>
+                <td><center><img src="./poe.jpg" alt="Antología de cuentos de Edgar Allan Poe" height="200" width="300"></center></td>
+            </tr>
+            <tr><!--5-->
+                <td>Meditaciones de Marco Aurelio</td>
+                <td><center><img src="./med.jpg" alt="Meditaciones de Marco Aurelio" height="300" width="200"></center></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <form><!--Deben de existir dos partes: comprador y producto
+              Llevar: 6 inputs diferentes, select, textfield, radio button/checkbox, botón BORRAR y ENVIAR-->
+        <fieldset>
+            <legend> Catálogo de productos </legend>
+                <label for="Producto">Producto<!---->
+                <select id="Producto" required="on">
+                    <optgroup>
+                        <option value="La insoportable levedad del ser">La insoportable levedad del ser</option>
+                        <option value="The Dark Tower IV: Wizard and Glass">The Dark Tower IV: Wizard and Glass</option>
+                        <option value="Introducción al psicoanálisis">Introducción al psicoanálisis</option>
+                        <option value="Antología de cuentos de Edgar Allan Poe">Antología de cuentos de Edgar Allan Poe</option>
+                        <option value="Meditaciones de Marco Aurelio">Meditaciones de Marco Aurelio</option>
+                    </optgroup>
+                </select>
+                </label><br><br>
+                <label for="Num. copias">Número de ejemplares a comprar:<!---->
+                    <input id="Num. copias" type="tel" maxlength="1" value="1" required size="12.75"><br>
+                </label><br>
+                <label for="Pasta">Pasta:<br><!---->
+                    <input type="radio" name="Pasta" value="Pasta blanda" checked>Pasta blanda<br>
+                    <input type="radio" name="Pasta" value="Pasta dura">Pasta dura<br>
+                </label><br>
+        </fieldset>
+        <fieldset>
+            <legend> Comprador </legend>
+                <label for="Nombre">Nombre:<br>
+                    <input id="Nombre" type="text"required="on">
+                </label><br><br>
+                <label for="Apellido">Apellido(s):<br>
+                    <input id="Apellido" type="text"required="on">
+                </label><br><br>
+                <label for="email">Email:<br>
+                    <input id="email" type="email" placeholder="holis@gmail.com" autocomplete="on"required="on">
+                </label><br><br>
+                <label for="Tel">Número telefónico:<br><!---->
+                    <input id="Tel" type="tel" maxlength="10" placeholder="00 0000 0000" autocomplete="on" pattern="[0-9]{10}" required="on"><br>
+                </label><br><br>
+                <label for="DíaEntrega">Día deseado de entrega:<br>
+                    <input id="DíaEntrega" type="date"placeholder="Opcional">
+                </label><br><br>
+                <label for="Dirección">Dirección:<br>
+                    <input id="Apellido" type="text"required="on" size="103">
+                </label><br><br>
+                <label>Razón de compra:<br></label><textarea cols="100" rows="2" minlength="30" ></textarea>
+        </fieldset> 
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form> 
+</font>  
+</body>
+</html>
