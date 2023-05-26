@@ -1,0 +1,37 @@
+/*h1{
+    background-color: blueviolet;
+    display:block;
+    padding:2rem;
+    margin-top:5rem;
+}*/
+span{
+    background-color: chocolate;
+    padding:15rem;
+    display:inline-block;
+}
+div{
+    background-color: beige;
+    padding:2rem;
+    margin:auto;
+    border:1px solid black;
+    margin-bottom:2rem;
+    width:50%;
+    text-align:center;
+    height:16rem;
+    overflow:auto;
+}
+/*el contenido en overflow, si es scroll, se desplaza con cursor; auto, lo automatiza. si es hidden, nomás lo manda a la kk*/
+img{
+    display:block;
+    margin:auto;
+}
+/*margin auto centra en función del contenedor; si este es más pequeño, se da un error locochón y se posiciona mal*/
+/*Transform:translate(x,y)=>hace que se traslade los pixeles que se les determine. puede ser translateY*/
+p::before{
+    content:"TEXTO BEFORE";
+    color:blue;
+}
+p::after{
+    content:"TEXTO AFTER";
+    color:red;
+}
