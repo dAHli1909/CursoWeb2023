@@ -16,3 +16,17 @@ UPDATE anime SET nombre_antagonista="General" WHERE nombre_antagonista="Griffith
 DELETE FROM anime WHERE nombre_antagonista="General";
 TRUNCATE anime; --borra toh los registros
 DROP DATABASE anime; --borra la base de datos completa
+
+CREATE TABLE usuario(
+    ID_USUARIO INT PRIMARY KEY AUTO_INCREMENT,
+    nombre CHAR(200),
+    tel CHAR(10)
+);
+CREATE TABLE usuario_HASH_usuario(
+    ID_rel INT PRIMARY KEY AUTO_INCREMENT,
+    ID_USUARIO1 INT NOT NULL,
+    FOREIGN KEY (ID_USUARIO1) REFERENCES usuario (ID_USUARIO),
+    ID_USUARIO2 INT NOT NULL,
+    FOREIGN KEY (ID_USUARIO2) REFERENCES usuario (ID_USUARIO)
+);
+FOREIGN KEY(ID_rel) REFERENCES usuario_HASH_usuario (ID_rel);

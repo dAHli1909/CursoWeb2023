@@ -1,0 +1,43 @@
+h1{
+    position:relative;
+    margin:auto;
+    padding: 30px;
+    text-align: center;
+}
+
+form{
+    background-color: beige;
+    position:relative;
+    border-radius: 15%;
+    padding:20px;
+    /* display:flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.contenedor{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    top:auto;
+    /* position:absolute;
+    left:42%; */
+    gap:1vw;
+    flex-wrap: wrap;
+}
+
+/* #act{
+    z-index: -1;
+}
+
+#esp{
+    z-index: 0;
+}
+
+#reg{
+    z-index: 1;
+}
+
+#thx{
+    z-index: 2;
+} */

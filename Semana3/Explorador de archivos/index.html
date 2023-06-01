@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador de archivos</title>
+    <link rel="stylesheet" href="./statics/style/style.css">
+</head>
+<body> 
+    <h1>Bienvenido</h1>
+    <div class="contenedor">
+        <form method="post" action="./dynamics/php/exp_arch_act.php" target="_self">
+            <label for="nom">Usuario:</label><br>
+                <input type="text" id="nom" name="nombre" required /><br><br>
+            </label><br>
+            <label for="Casa">Casa:<!----><br>
+                <select id="casa" name="casa" required="on">
+                    <optgroup>
+                        <option value="teporingos">Teporingos</option>
+                        <option value="ajolotes">Ajolotes</option>
+                        <option value="halcones">Halcones</option>
+                    </optgroup>
+                </select>
+            </label><br><br>
+            <button type="submit" id="submit">Entrar</button>
+        </form>
+    
+        
+    </div>
+    
+</body>
+</html>
