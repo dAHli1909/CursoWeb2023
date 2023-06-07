@@ -1,0 +1,19 @@
+#contenedor{
+    text-align: center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+button{
+    padding-left:2rem;
+    padding-right: 2rem;
+}
+#yes{
+    background-color: rgb(130, 19, 221);
+    border:none;
+}
+#no{
+    background-color: red;
+    border:none;
+}
